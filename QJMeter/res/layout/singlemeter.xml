@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:lineSpacingExtra="50dp"
+        android:text="单表维护"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/textmeteraddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_toLeftOf="@+id/checkBox1"
+        android:layout_toRightOf="@+id/firmcode"
+        android:ems="10"
+        android:gravity="center"
+        android:maxLength="10"
+        android:numeric="integer"
+        android:singleLine="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textfirmcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/firmcode"
+        android:layout_alignLeft="@+id/textmeteraddr"
+        android:layout_toLeftOf="@+id/checkBox1"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/firmcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/meteraddr"
+        android:layout_marginTop="25dp"
+        android:text="厂商代码"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/meteraddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textmeteraddr"
+        android:layout_alignParentLeft="true"
+        android:text="水表地址"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:text="连接蓝牙设备" />
+
+    <Button
+        android:id="@+id/read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/connect"
+        android:text="读取" />
+
+    <TextView
+        android:id="@+id/meterdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/firmcode"
+        android:layout_marginTop="25dp"
+        android:text="水表读数"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textmeterdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/meterdata"
+        android:layout_alignLeft="@+id/textfirmcode"
+        android:layout_toLeftOf="@+id/checkBox1"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="20dp" >
+
+        <requestFocus />
+    </TextView>
+
+    <TextView
+        android:id="@+id/constate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="蓝牙未连接" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textmeterdata"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_alignParentRight="true"
+        android:text="清除" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/firmcode"
+        android:layout_alignParentRight="true"
+        android:text="指定表地址" />
+
+</RelativeLayout>

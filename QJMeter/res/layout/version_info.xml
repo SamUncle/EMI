@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:shrinkColumns="0"
+    android:stretchColumns="1" >
+
+    <TableRow
+            android:id="@+id/tb_ver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+            <TextView
+                android:id="@+id/tv_soft_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/soft_note"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="normal" />
+        </TableRow>
+
+    <TableRow
+        android:id="@+id/tb_curVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        >
+
+        <TextView
+            android:id="@+id/tv_jieshao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cur_ver"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tb_verpro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         >
+
+        <Button
+            android:id="@+id/btn_checkVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_ver" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tb_downVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         >
+
+        <Button
+        android:id="@+id/btn_downVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/down_ver" />
+
+    </TableRow>
+    
+
+</TableLayout>

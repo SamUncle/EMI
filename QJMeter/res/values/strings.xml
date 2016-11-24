@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QJ手抄器</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="soft_note">软件信息</string>
+    <string name="check_ver">查看当前版本</string>
+    <string name="cur_ver">软件信息及操作指南: \n 1.点击自动抄表显示小区信息 \n 2.点击小区信息,跳转到蓝牙连接界面蓝牙MBus转换器插到通道设备板,打开MBus转换器 \n 3.打开手机蓝牙和蓝牙MBus转换器,匹配蓝牙,然后点击蓝牙连接蓝牙:EMI0001 密码:1234 \n 4.连接成功后,点击开始抄表\n  5.抄表完成后,点击下载信息\n  6.下载成功后,用接口软件读取抄表数据,然后导出Excel</string>
+    <string name="down_ver">下载最新版</string>
+</resources>
